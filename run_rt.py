@@ -8,7 +8,7 @@ custom_weights = "C:\\Users\\Sofiia\\yolov5\\best.pt"
 model = torch.hub.load('C:\\Users\\Sofiia\\yolov5', 'custom', 'best.pt', source='local')
 
 # Video stream from TCP server
-video_stream_url = "tcp://192.168.137.125:34888"
+video_stream_url = "tcp://192.168.135.125:34777"
 cap = cv2.VideoCapture(video_stream_url) # replace video_stream_url with 0 to test on local machine
 
 if not cap.isOpened():
